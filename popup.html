@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 다운로드</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+            width: 200px;
+        }
+        #progress-container {
+            width: 100%;
+            background-color: #f3f3f3;
+            border-radius: 5px;
+            margin-top: 20px;
+            overflow: hidden;
+            display: none;
+        }
+        #progress-bar {
+            height: 20px;
+            width: 0;
+            background-color: #4caf50;
+            transition: width 0.3s;
+        }
+        #status {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>이미지 다운로드</h1>
+    <button id="download">이미지 다운로드</button>
+    
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+    <p id="status"></p>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
